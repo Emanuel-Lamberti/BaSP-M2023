@@ -6,7 +6,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #535353;
-    height: 7750px;
 }
 
 header {
@@ -23,7 +22,7 @@ header {
 }
 
 header img {
-    width: 103px;
+    width: 102px;
     height: 95px;
     margin-bottom: -10px;
     margin-top: 20px;
@@ -56,10 +55,10 @@ header h1 {
     background-color: #FFFFFF;
     border-radius: 5%;
     display: inline-block;
-    padding: 40px 20px 0 0;
-    margin: 30px 10px 10px 10px;
+    padding: 30px 20px 0 0;
+    margin: 50px 10px 10px 10px;
     width: 158px;
-    height: 76px;
+    height: 55px;
     text-align: center;
 }
 
@@ -146,7 +145,7 @@ header h1 {
 
 .p-fit {
     padding-top: 190px;
-    margin-left: -330px;
+    margin-left: 40px;
 }
 
 .get-fit p {
@@ -212,9 +211,9 @@ header h1 {
     background-image: url("/Assets/schedule.png");
     background-size: cover;
     margin-left: 650px;
-    margin-top: -285px;
+    margin-top: -274px;
     width: 451px;
-    height: 287px;
+    height: 275px;
     border-radius: 10px;
 }
 
@@ -248,6 +247,7 @@ header h1 {
     height: 287px;
     margin-left: 100px;
     margin-top: 100px;
+    border-radius: 10px;
 }
 
 .memberships h3 {
@@ -279,6 +279,7 @@ header h1 {
     height: 288;
     margin-left: 650px;
     margin-top: -290px;
+    border-radius: 10px;
 }
 
 .contact h3 {
@@ -301,10 +302,13 @@ header h1 {
     font-size: 30px;
     text-align: center;
     text-shadow: #000000 6px 2px 1px;
+    padding-top: 6px;
+    margin-top: 10px;
 }
 
 .contact-us {
     align-items: center;
+    margin-top: -50px;
 }
 
 .contact-us h2 {
@@ -312,7 +316,6 @@ header h1 {
     font-size: 100px;
     text-shadow: #000000 6px 2px 1px;
     margin-left: 300px;
-    padding-top: 100px;
 }
 
 .contact-us span {
@@ -328,25 +331,27 @@ header h1 {
     border-radius: 30px;
     margin-left: 50px;
     margin-top: 110px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     padding: 30px;
 }
 
 .form-contact-us li {
     list-style: none;
-    margin-left: 50px;
+    display: inline-block;
 }
 
 .form-contact-us li label {
     color: #000000;
     font-size: 18px;
+    margin: 10px 20px 20px 20px;
 }
 
 .form-contact-us li input {
     background-color: #d1d1d1;
     border-radius: 4px;
     display: block;
-    margin-top: 10px;
+    margin: 10px 20px 20px 20px;
+    padding-left: 10px;
     width: 190px;
     height: 35px;
 }
@@ -357,23 +362,40 @@ header h1 {
     height: 34px;
     border-radius: 6px;
     position: relative;
-    margin-left: 480px;
-    margin-top: 60px;
+    margin-left: 460px;
+    margin-top: 40px;
     border: 0;
 }
 
+.class-form {
+    margin-left: 15px;
+}
+
 .form-group {
-    justify-content: space-evenly;
     display: inline-block;
+    width: 1030px;
+}
+
+.form-group p {
+    color: #000000;
+    font-size: 18px;
 }
 
 .form-group select {
     background-color: #d1d1d1;
     border-radius: 4px;
     margin-top: 10px;
+    margin-left: 20px;
     padding: 10px;
     width: 190px;
-    height: 35px;
+    height: 40px;
+}
+
+.contact-us p {
+    color: #000000;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .form-contact-us textarea {
@@ -382,9 +404,281 @@ header h1 {
     width: 935px;
     height: 100px;
     border: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
+.activities h2 {
+    color:#ffffff;
+    font-size: 100px;
+    text-shadow: #000000 6px 2px 1px;
+    margin-left: 300px;
+    padding-top: 20px;
+}
 
+.activities span {
+    color:#E3EC39;
+    position: absolute;
+    margin-top: 78px;
+}
+
+.activities .crossfit {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/Assets/crossfit.jpg");
+    background-size: cover;
+    width: 306px;
+    height: 187px;
+    margin-top: 150px;
+    margin-left: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.activities .crossfit h3 {
+    color:#ffffff;
+    font-size: 40px;
+    text-shadow: #000000 2px 2px 1px;
+    margin-left: 60px;
+    padding-top: 68px;
+}
+
+.activities {
+    margin-bottom: 100px;
+}
+
+.activities .box {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/box.png");
+    background-size: cover;
+    width: 306px;
+    height: 187px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 700px;
+    margin-top: -190px;
+}
+
+.activities .box h3 {
+    color:#ffffff;
+    font-size: 40px;
+    text-shadow: #000000 2px 2px 1px;
+    margin-left: 110px;
+    padding-top: 68px;
+}
+
+.activities .functional {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/functional.jpg");
+    background-size: cover;
+    width: 306px;
+    height: 187px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.activities .functional h3 {
+    color:#ffffff;
+    font-size: 40px;
+    text-shadow: #000000 2px 2px 1px;
+    margin-left: 30px;
+    padding-top: 70px;
+}
+
+.activities .spinning {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/Spinning.png");
+    background-size: cover;
+    width: 306px;
+    height: 187px;
+    position: relative;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 440px;
+    margin-top: -186px;
+}
+
+.activities .spinning h3 {
+    color:#ffffff;
+    font-size: 40px;
+    text-shadow: #000000 2px 2px 1px;
+    margin-left: 60px;
+    padding-top: 68px;
+}
+
+.activities .fitness {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/Fitness.webp");
+    background-size: cover;
+    position: relative;
+    width: 306px;
+    height: 187px;
+    border-radius: 10px;
+    margin-left: 800px;
+    margin-top: -186px;
+}
+
+.activities .fitness h3 {
+    color:#ffffff;
+    font-size: 40px;
+    text-shadow: #000000 2px 2px 1px;
+    margin-left: 70px;
+    padding-top: 70px;
+}
+
+.memberships-section {
+    align-items: center;
+}
+
+.memberships-section h2 {
+    color: #FFFFFF;
+    text-shadow: #000000 6px 2px 1px;
+    font-size: 95px;
+    margin-left: 250px;
+}
+
+.memberships-section span {
+    color: #E3EC39;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 70px;
+}
+
+.memberships-section .member-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/onlyclasses.png");
+    background-size: cover;
+    width: 480px;
+    height: 575px;
+    border-radius: 10px;
+    margin-top: 140px;
+    margin-left: 380px;
+    margin-bottom: 50px;
+}
+
+.memberships-section .member-1 h3 {
+    text-align: center;
+    color: #E3EC39;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.memberships-section .member-1 .p1-member-1 {
+    text-align: center;
+    margin-top: 100px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.memberships-section .member-1 .p2-member-1 {
+    text-align: center;
+    margin-top: 100px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.memberships-section .member-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/CLASSICMEMBERSHIP.png");
+    background-size: cover;
+    width: 480px;
+    height: 575px;
+    border-radius: 10px;
+    margin-left: 380px;
+    margin-bottom: 50px;
+}
+
+.memberships-section .member-2 h3 {
+    text-align: center;
+    color: #E3EC39;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.memberships-section .member-2 p {
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.memberships-section .member-2 .p-member-2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.memberships-section .member-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/blackmemeb.png");
+    background-size: cover;
+    width: 480px;
+    height: 575px;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 380px;
+    margin-bottom: 80px;
+}
+
+.memberships-section .member-3 h3 {
+    text-align: center;
+    color: #E3EC39;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.memberships-section .member-3 p {
+    margin-top: 60px;
+    margin-left: 10px;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+}
+
+.memberships-section .member-3 .p-member-3 {
+    text-align: center;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+}
+
+.our-story {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.our-story h2 {
+    color: #FFFFFF;
+    font-size: 60px;
+    text-shadow: #000000 6px 2px 1px;
+    margin-left: 80px;
+}
+
+.our-story span {
+    color:#E3EC39;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.our-story .p-story{
+    background-color: #d1d1d1;
+    width: 666px;
+    height: 214px;
+    border-radius: 18px;
+    margin-left: 450px;
+    margin-top: -100px;
+    position: relative;
+}
+
+.our-story .p-story .p-story-1 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.our-story .p-story .p-story-2 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: -20px;
+}
 
 footer {
     background-color: #323232;
@@ -397,5 +691,30 @@ footer {
 footer a {
     color: #FFFFFF;
     text-decoration: none;
-    margin-left: 50px;
+    display: inline-block;
+    padding-left: 80px;
+    font-size: 20px;
+}
+
+footer a img {
+    margin-right: 10px;
+    transform: translate(-10px, 30px);
+}
+
+footer .p-footer {
+    text-align: center;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 1050px;
+    margin-top: -35px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 1050px;
 }
