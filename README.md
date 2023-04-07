@@ -13,5 +13,8 @@ A new repository was created, and the website layout began, based on what was pr
 Added a new folder with html file and its styles in css. 
 In this week, the work was oriented towards giving it the style proposed in the landing of the first week, working on its classes and labels.
 
+## Week 04
+In this part of the project, new style files are added to make the web platform responsive designed to be enjoyed on different devices. The main ones to mention would be the following: iPhone, iPad, and MacBook.
+
 ## Author
 - Emanuel Adrián Lamberti
