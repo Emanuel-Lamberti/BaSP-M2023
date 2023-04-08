@@ -1,0 +1,44 @@
+.container-main {
+    display: row;
+    background-color: #979797;
+}
+
+.get-fit {
+    background-image: url("/Assets/istockphoto-02.jpg");
+    background-size: cover;
+}
+
+@media screen and (min-width: 390px) and (max-width: 600px){
+    aside {
+        display: none;
+    }
+
+    .get-fit h2 {
+        font-size: 380%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: -3rem;
+        padding-top: 3rem;
+    }
+    
+    .get-fit span {
+        padding-left: 10rem;
+    }
+
+    .get-fit .p-fit {
+        color: #FFFFFF;
+        font-size: 20px;
+        padding-top: 4rem;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 5rem;
+    }
+    
+    .get-fit p {
+        margin-top: 3rem;
+    }
+}

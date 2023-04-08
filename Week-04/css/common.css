@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #FFFFFF;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    text-shadow: #000000 3px 0.1px 0.1px;
+}
+
+span {
+    color: #E3EC39;
+    position: relative;
+    top: 1rem;
+}
