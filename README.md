@@ -3,6 +3,15 @@
 
 ![Image text](https://github.com/Emanuel-Lamberti/BaSP-M2023/blob/master/Assets/image.png)
 
+During the 15-week journey, this challenge of creating a web platform that adapts to different devices from scratch will be carried out.
+The challenge will consist of creating a web page for a gym, whose name is Mega Rocket S.A.
+
+To carry out this challenge, knowledge will be implemented with different tools and languages ​​to carry out this activity.
+They are:
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+
 ## Week 01
 During week 01 the landing page was made in Figma, and each of its Screenflows.
 
