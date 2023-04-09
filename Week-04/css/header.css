@@ -32,7 +32,7 @@ header .btn-hamburguer-menu img {
     header .btn-hamburguer-menu {
         position: relative;
         display: flex;
-        right: 2rem;
+        right: 1rem;
     }
 }
 
