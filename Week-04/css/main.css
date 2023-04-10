@@ -1,8 +1,3 @@
-.container-main {
-    display: row;
-    background-color: #686868;
-}
-
 .get-fit {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../Assets/istockphoto-02.jpg");
     background-size: cover;
@@ -11,6 +6,14 @@
 @media screen and (min-width: 390px) and (max-width: 600px){
     aside {
         display: none;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #686868;
     }
 
     .get-fit h2 {
@@ -61,6 +64,13 @@
         margin-top: -1.3rem;
     }
 
+    .features {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .reservations, .schedule, .memberships, .contact {
         width: 320px;
         height: 250px;
@@ -70,7 +80,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-left: 2.2rem;
         margin-bottom: 3rem;
     }
 
@@ -126,7 +135,6 @@
         width: 355px;
         height: 626px;
         border-radius: 30px;
-        margin-left: 1.1rem;
         display: flex;
         flex-direction: column;
     }
@@ -330,15 +338,14 @@
 
     .our-story .text-story {
         background-color: #D9D9D9;
-        width: 320px;
-        height: 159px;
+        width: 20rem;
+        height: 10rem;
         border-radius: 12px;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        margin-left: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 
     .our-story .text-story .paragraph-story-1 {
@@ -354,6 +361,18 @@
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     aside {
         display: none;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #686868;
+    }
+
+    .container-sections {
+        width: 100%;
     }
 
     .get-fit h2 {
@@ -387,6 +406,14 @@
         font-size: 1.5rem;
     }
 
+    .features {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
     .features h2 {
         font-size: 500%;
         font-weight: bold;
@@ -414,7 +441,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-left: 2.2rem;
         margin-bottom: 6rem;
     }
 
@@ -472,39 +498,59 @@
         width: 35rem;
         height: 40rem;
         border-radius: 30px;
-        margin-left: 1.3rem;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
 
     .contact-us .form-contact-us .class-form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
 
-    .contact-us .form-contact-us .class-form .form-group .label-input, .label-textarea {
+    .contact-us .form-contact-us .class-form .form-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin: auto;
+    }
+
+    .contact-us .form-contact-us .class-form .form-group .label-input {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 1.2rem;
+        width: 35%;
+    }
+
+    .label-textarea {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4rem;
     }
 
     label {
         font-size: 1rem;
         margin-bottom: 1rem;
+
     }
 
-    input, select {
-        width: 290px;
+    .class-form .form-group input, select {
+        width: 100%;
         height: 30px;
         border-radius: 4px;
         background-color: #d1d1d1;
     }
 
     textarea {
-        width: 292px;
-        height: 132px;
+        width: 30rem;
+        height: 10rem;
         border-radius: 10px;
         background-color: #d1d1d1;
     }
@@ -673,6 +719,13 @@
         margin-top: -1.3rem;
     }
 
+    .our-story {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .our-story .text-story {
         background-color: #D9D9D9;
         width: 32rem;
@@ -682,7 +735,6 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        margin-left: 2.8rem;
         margin-bottom: 3rem;
     }
 
@@ -697,11 +749,21 @@
 }
 
 @media screen and (min-width: 1025px) {
+    .container-main {
+        display: flex;
+        flex-direction: row;
+        background-color: #686868;
+        width: 100%;
+    }
+
     aside {
         background-color: #E3EC39;
-        width: 15rem;
-        height: 306.6rem;
-        position: absolute;
+        width: 20%;
+        height: auto;
+    }
+
+    .container-sections {
+        width: 80%;
     }
 
     aside .links-sidebar {
@@ -732,10 +794,6 @@
 
     aside .container-dates h4 {
         margin-bottom: 2rem;
-    }
-
-    main {
-        margin-left: 15rem;
     }
 
     .get-fit {
@@ -770,9 +828,9 @@
     }
     
     .get-fit p {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         margin-bottom: 1rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .features h2 {
@@ -795,16 +853,16 @@
 
     .features-group-reserv-sched {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .features-group-memb-cont {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .reservations, .schedule, .memberships, .contact {
-        width: 20rem;
+        width: 25rem;
         height: 15rem;
         border-radius: 30px;
         box-shadow: 0.2rem 0.2rem 0.5rem #000000;
@@ -864,18 +922,22 @@
         margin-top: -1.3rem;
     }
 
+    .form-contact-us {
+        margin: auto;
+    }
+
     .contact-us .form-contact-us {
         background-color: #FFFFFF;
         width: 45rem;
         height: 20rem;
         border-radius: 30px;
-        margin-left: 3.5rem;
     }
 
     .contact-us .form-contact-us .class-form {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .contact-us .form-contact-us .class-form .form-group {
@@ -1064,7 +1126,7 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .our-story h2 {
@@ -1072,7 +1134,6 @@
         font-weight: bold;
         margin-top: 3rem;
         margin-bottom: 3rem;
-        margin-left: 2rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start; 

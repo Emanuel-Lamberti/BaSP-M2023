@@ -98,6 +98,7 @@
         height: 148px;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .link-social {
@@ -108,7 +109,7 @@
     footer img {
         width: 75px;
         height: 75px;
-        margin-right: 0.3rem;
+        margin-right: 1rem;
     }
     
     footer a {
