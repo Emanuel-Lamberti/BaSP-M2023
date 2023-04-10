@@ -25,5 +25,15 @@ In this week, the work was oriented towards giving it the style proposed in the 
 ## Week 04
 In this part of the project, new style files are added to make the web platform responsive designed to be enjoyed on different devices. The main ones to mention would be the following: iPhone, iPad, and MacBook.
 
+## 🔗 Links
+[index.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-04/index.html)
+
+Media queries were applied for the following views:
+<ul>
+    <li>Mobile view : 930px to 600px.</li>
+    <li>Tablet view : 601px to 1023px.</li>
+    <li>Desktop view : 1025px onwards.</li>
+</ul>
+
 ## Author
 - Emanuel Adrián Lamberti

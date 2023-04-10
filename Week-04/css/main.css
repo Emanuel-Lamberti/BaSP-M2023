@@ -85,18 +85,22 @@
 
     .reservations {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/reservations.png");
+        background-size: cover;
     }
 
     .schedule {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/schedule.png");
+        background-size: cover;
     }
 
     .memberships {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/memberships.png");
+        background-size: cover;
     }
 
     .contact {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/contact-suggestions.png");
+        background-size: cover;
     }
 
     .reservations h3, .schedule h3, .memberships h3, .contact h3 {
@@ -105,6 +109,7 @@
         font-weight: bold;
         margin-bottom: 3rem;
         display: flex;
+        text-align: center;
     }
 
     .reservations p, .schedule p, .memberships p, .contact p {
@@ -137,6 +142,7 @@
         border-radius: 30px;
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
 
     .contact-us .form-contact-us .class-form {
@@ -336,6 +342,11 @@
         margin-top: -1.3rem;
     }
 
+    .our-story {
+        display: flex;
+        align-items: center;
+    }
+
     .our-story .text-story {
         background-color: #D9D9D9;
         width: 20rem;
@@ -446,18 +457,22 @@
 
     .reservations {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/reservations.png");
+        background-size: cover;
     }
 
     .schedule {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/schedule.png");
+        background-size: cover;
     }
 
     .memberships {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/memberships.png");
+        background-size: cover;
     }
 
     .contact {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/contact-suggestions.png");
+        background-size: cover;
     }
 
     .reservations h3, .schedule h3, .memberships h3, .contact h3 {
@@ -748,7 +763,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1300px){
     .container-main {
         display: flex;
         flex-direction: row;
@@ -800,6 +815,7 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../Assets/dontsit2.jpg");
         background-size: cover;
         width: auto;
+        height: 50rem;
     }
 
     .get-fit h2 {
@@ -810,12 +826,12 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: -10rem;
+        margin-left: -15rem;
         padding-top: 6rem;
     }
     
     .get-fit span {
-        padding-left: 30rem;
+        padding-left: 35rem;
     }
 
     .get-fit .text-fit {
@@ -847,7 +863,7 @@
     }
 
     .features h2 span {
-        padding-left: 24rem;
+        padding-left: 22rem;
         margin-top: -1.5rem;
     }
 
@@ -862,7 +878,7 @@
     }
 
     .reservations, .schedule, .memberships, .contact {
-        width: 25rem;
+        width: 20rem;
         height: 15rem;
         border-radius: 30px;
         box-shadow: 0.2rem 0.2rem 0.5rem #000000;
@@ -875,18 +891,22 @@
 
     .reservations {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/reservations.png");
+        background-size: cover;
     }
 
     .schedule {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/schedule.png");
+        background-size: cover;
     }
 
     .memberships {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/memberships.png");
+        background-size: cover;
     }
 
     .contact {
         background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/contact-suggestions.png");
+        background-size: cover;
     }
 
     .reservations h3, .schedule h3, .memberships h3, .contact h3 {
@@ -929,7 +949,7 @@
     .contact-us .form-contact-us {
         background-color: #FFFFFF;
         width: 45rem;
-        height: 20rem;
+        height: 30rem;
         border-radius: 30px;
     }
 
@@ -943,6 +963,7 @@
     .contact-us .form-contact-us .class-form .form-group {
         display: flex;
         flex-direction: row;
+        margin-top: 2rem;
     }
 
     .contact-us .form-contact-us .class-form .form-group .label-input, .label-textarea {
@@ -952,6 +973,14 @@
         margin-top: 1.2rem;
     }
 
+    .label-input {
+        margin-left: 2rem;
+    }
+
+    .label-textarea {
+        margin-top: 2rem;
+    }
+
     label {
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -959,15 +988,14 @@
 
     input, select {
         width: 8rem;
-        height: 1.5rem;
+        height: 2rem;
         border-radius: 4px;
         background-color: #d1d1d1;
-        margin-left: 1rem;
     }
 
     textarea {
         width: 40rem;
-        height: 6rem;
+        height: 9rem;
         border-radius: 10px;
         background-color: #d1d1d1;
     }
@@ -977,7 +1005,7 @@
         width: 75px;
         height: 34px;
         border-radius: 6px;
-        margin-top: 2rem;
+        margin-top: 4rem;
         border: none;
         display: flex;
         align-items: center;
@@ -1019,7 +1047,7 @@
     .crossfit, .box , .functional, .spinning, .fitness {
         box-shadow: 0.2rem 0.2rem 0.5rem #000000;
         width: 15rem;
-        height: 10rem;
+        height: 9rem;
         border-radius: 10px;
         margin-bottom: 3rem;
         display:flex;
@@ -1064,7 +1092,7 @@
         font-weight: bold;
         margin-top: 3rem;
         margin-bottom: 4rem;
-        margin-left: -8rem;
+        margin-left: -15rem;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -1073,7 +1101,7 @@
     }
 
     .memberships-section span {
-        padding-left: 22rem;
+        padding-left: 35rem;
         margin-top: -1.3rem;
     }
 
@@ -1086,7 +1114,7 @@
     }
 
     .only-classes, .classic-member, .black-member {
-        width: 20rem;
+        width: 25rem;
         height: 30rem;
         border-radius: 30px;
         display: flex;
@@ -1097,12 +1125,14 @@
 
     .only-classes h3, .classic-member h3, .black-member h3 {
         color: #E3EC39;
-        font-size: 2rem;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
     }
 
     .only-classes p, .classic-member p, .black-member p {
         color: #FFFFFF;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -1130,7 +1160,7 @@
     }
 
     .our-story h2 {
-        font-size: 300%;
+        font-size: 400%;
         font-weight: bold;
         margin-top: 3rem;
         margin-bottom: 3rem;
@@ -1147,7 +1177,7 @@
     .our-story .text-story {
         background-color: #D9D9D9;
         width: 30rem;
-        height: 10rem;
+        height: 15rem;
         border-radius: 12px;
         display: flex;
         align-items: center;
@@ -1155,6 +1185,448 @@
         justify-content: center;
         margin-left: 2.8rem;
         margin-bottom: 5rem;
+    }
+
+    .our-story .text-story p {
+        font-size: 1rem;
+    }
+
+    .our-story .text-story .paragraph-story-1 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .container-main {
+        display: flex;
+        flex-direction: row;
+        background-color: #686868;
+        width: 100%;
+    }
+
+    aside {
+        background-color: #E3EC39;
+        width: 20%;
+        height: auto;
+    }
+
+    .container-sections {
+        width: 80%;
+    }
+
+    aside .links-sidebar {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        margin-bottom: 6rem;
+    }
+
+    aside .links-sidebar a {
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    aside .container-dates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside .container-dates .location h4 {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    aside .container-dates h4 {
+        margin-bottom: 2rem;
+    }
+
+    .get-fit {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../Assets/dontsit2.jpg");
+        background-size: cover;
+        width: auto;
+        height: 50rem;
+    }
+
+    .get-fit h2 {
+        font-size: 700%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: -25rem;
+        padding-top: 6rem;
+    }
+    
+    .get-fit span {
+        padding-left: 60rem;
+    }
+
+    .get-fit .text-fit {
+        color: #FFFFFF;
+        padding-top: 8rem;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        padding-bottom: 8rem;
+    }
+    
+    .get-fit p {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    .features h2 {
+        font-size: 700%;
+        font-weight: bold;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        margin-left: -15rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features h2 span {
+        padding-left: 32rem;
+        margin-top: -1.5rem;
+    }
+
+    .features-group-reserv-sched {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .features-group-memb-cont {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .reservations, .schedule, .memberships, .contact {
+        width: 30rem;
+        height: 18rem;
+        border-radius: 30px;
+        box-shadow: 0.2rem 0.2rem 0.5rem #000000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .reservations {
+        background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/reservations.png");
+        background-size: cover;
+    }
+
+    .schedule {
+        background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/schedule.png");
+        background-size: cover;
+    }
+
+    .memberships {
+        background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/memberships.png");
+        background-size: cover;
+    }
+
+    .contact {
+        background-image: linear-gradient(rgba(136, 136, 136, 0.1), rgba(136, 136, 136, 0.1)) ,url("../../Assets/contact-suggestions.png");
+        background-size: cover;
+    }
+
+    .reservations h3, .schedule h3, .memberships h3, .contact h3 {
+        color: #E3EC39;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        display: flex;
+        text-align: center;
+    }
+
+    .reservations p, .schedule p, .memberships p, .contact p {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .contact-us h2 {
+        font-size: 700%;
+        font-weight: bold;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        margin-left: -7rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-us span {
+        padding-left: 28rem;
+        margin-top: -1.3rem;
+    }
+
+    .form-contact-us {
+        margin: auto;
+    }
+
+    .contact-us .form-contact-us {
+        background-color: #FFFFFF;
+        width: 60rem;
+        height: 30rem;
+        border-radius: 30px;
+    }
+
+    .contact-us .form-contact-us .class-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-us .form-contact-us .class-form .form-group {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+
+    .contact-us .form-contact-us .class-form .form-group .label-input, .label-textarea {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1.2rem;
+    }
+
+    .label-input {
+        margin-left: 2rem;
+    }
+
+    .label-textarea {
+        margin-top: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input, select {
+        width: 10rem;
+        height: 2rem;
+        border-radius: 4px;
+        background-color: #d1d1d1;
+    }
+
+    textarea {
+        width: 50rem;
+        height: 9rem;
+        border-radius: 10px;
+        background-color: #d1d1d1;
+    }
+
+    .contact-us .form-contact-us button {
+        background-color: #E3EC39;
+        width: 75px;
+        height: 34px;
+        border-radius: 6px;
+        margin-top: 4rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .activities h2 {
+        font-size: 700%;
+        font-weight: bold;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        margin-left: -10.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .activities span {
+        padding-left: 26rem;
+        margin-top: -1.3rem;
+    }
+
+    .activities-boxes .activ-box-cross-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .activ-box-func-spin-fit {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .crossfit, .box , .functional, .spinning, .fitness {
+        box-shadow: 0.2rem 0.2rem 0.5rem #000000;
+        width: 20rem;
+        height: 12rem;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crossfit h3, .box h3, .functional h3, .spinning h3, .fitness h3 {
+        color: #FFFFFF;
+        font-size: 2rem;
+        text-shadow: #000000 2px 2px 1px;
+        background-color: hsla(0, 0%, 7%, 0.568);
+    }
+
+    .crossfit {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/crossfit.jpg");
+        background-size: cover;
+    }
+
+    .box {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/box.png");
+        background-size: cover;
+    }
+
+    .functional {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/functional.jpg");
+        background-size: cover;
+    }
+
+    .spinning {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/spinning.png");
+        background-size: cover;
+    }
+
+    .fitness {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/fitness.webp");
+        background-size: cover;
+    }
+
+    .memberships-section h2 {
+        font-size: 700%;
+        font-weight: bold;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        margin-left: -20rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .memberships-section span {
+        padding-left: 45rem;
+        margin-top: -1.3rem;
+    }
+
+    .membership-types {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .only-classes, .classic-member, .black-member {
+        width: 30rem;
+        height: 40rem;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+
+    .only-classes h3, .classic-member h3, .black-member h3 {
+        color: #E3EC39;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .only-classes p, .classic-member p, .black-member p {
+        color: #FFFFFF;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .only-classes {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/only-classes.png");
+        background-size: cover;
+    }
+
+    .classic-member {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/classic-memb.png");
+        background-size: cover;
+    }
+
+    .black-member {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/black-memeb.png");
+        background-size: cover;
+    }
+
+    .our-story {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .our-story h2 {
+        font-size: 500%;
+        font-weight: bold;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .our-story span {
+        padding-left: 5rem;
+        margin-top: -1.3rem;
+    }
+
+    .our-story .text-story {
+        background-color: #D9D9D9;
+        width: 40rem;
+        height: 20rem;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 2.8rem;
+        margin-bottom: 5rem;
+    }
+
+    .our-story .text-story p {
+        font-size: 1.5rem;
     }
 
     .our-story .text-story .paragraph-story-1 {
