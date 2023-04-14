@@ -35,5 +35,32 @@ Media queries were applied for the following views:
     <li>Desktop view : 1025px onwards.</li>
 </ul>
 
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Color Sidebar and span | ![#E3EC39](https://via.placeholder.com/10/0a192f?text=+) #E3EC39 |
+| Color footer paragraph | ![#666666](https://via.placeholder.com/10/f8f8f8?text=+) #666666 |
+| Color footer mobile and tablet | ![#C4C4C4](https://via.placeholder.com/10/00b48a?text=+) #C4C4C4 |
+| Color footer desktop | ![#323232](https://via.placeholder.com/10/00b48a?text=+) #323232 |
+| Color inputs, and textarea for form | ![#d1d1d1](https://via.placeholder.com/10/00b48a?text=+) #d1d1d1 |
+| Color text h2 and p | ![#FFFFFF](https://via.placeholder.com/10/00b48a?text=+) #FFFFFF |
+
+## Week 05
+
+For this week we were entrusted with a series of activities to be carried out with the JavaScript language.
+They were divided into the following folders:
+<ul>
+    <li>01-variables-and-operators</li>
+    <li>02-strings</li>
+    <li>03-arrays</li>
+    <li>04-if-else</li>
+    <li>05-for</li>
+    <li>06-functions</li>
+</ul>
+
+They must be connected by a script tag in the html for their correct operation.
+
+
 ## Author
 - Emanuel Adrián Lamberti
