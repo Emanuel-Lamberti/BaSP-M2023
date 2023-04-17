@@ -27,6 +27,7 @@ In this part of the project, new style files are added to make the web platform 
 
 ## 🔗 Links
 [index.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-04/index.html)
+[exercises-js.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-05/index.html)
 
 Media queries were applied for the following views:
 <ul>
@@ -39,12 +40,16 @@ Media queries were applied for the following views:
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Color Sidebar and span | ![#E3EC39](https://via.placeholder.com/10/0a192f?text=+) #E3EC39 |
-| Color footer paragraph | ![#666666](https://via.placeholder.com/10/f8f8f8?text=+) #666666 |
-| Color footer mobile and tablet | ![#C4C4C4](https://via.placeholder.com/10/00b48a?text=+) #C4C4C4 |
-| Color footer desktop | ![#323232](https://via.placeholder.com/10/00b48a?text=+) #323232 |
-| Color inputs, and textarea for form | ![#d1d1d1](https://via.placeholder.com/10/00b48a?text=+) #d1d1d1 |
-| Color text h2 and p | ![#FFFFFF](https://via.placeholder.com/10/00b48a?text=+) #FFFFFF |
+| Color Sidebar and span | ![#E3EC39](https://via.placeholder.com/10/E3EC39?text=+) #E3EC39 |
+| Color footer paragraph | ![#666666](https://via.placeholder.com/10/666666?text=+) #666666 |
+| Color footer mobile and tablet | ![#C4C4C4](https://via.placeholder.com/10/C4C4C4?text=+) #C4C4C4 |
+| Color footer desktop | ![#323232](https://via.placeholder.com/10/323232?text=+) #323232 |
+| Color inputs, and textarea for form | ![#d1d1d1](https://via.placeholder.com/10/d1d1d1text=+) #d1d1d1 |
+| Color text h2 and p | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+
+## Font-family
+
+<li>'Roboto', sans-serif</li>
 
 ## Week 05
 
