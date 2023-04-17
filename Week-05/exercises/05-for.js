@@ -24,11 +24,11 @@ for (var i = 0; i < newArray.length; i++) {
 // c. Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.
 
 console.log("-Exercise 5.c:");
-var sentence = [];
+var sentence = " ";
 var newArray = ["hello", "world", "fantastic", "wonderfull", "amazing"];
 var count = 0;
 for (var i = 0; i < newArray.length; i++) {
-    sentence.push(newArray[i]);
+    sentence = sentence + newArray[i];
 }
 alert("La cadena completa es: " + sentence);
 
