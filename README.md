@@ -25,9 +25,8 @@ In this week, the work was oriented towards giving it the style proposed in the 
 ## Week 04
 In this part of the project, new style files are added to make the web platform responsive designed to be enjoyed on different devices. The main ones to mention would be the following: iPhone, iPad, and MacBook.
 
-## 🔗 Links
+## 🔗 Link
 [index.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-04/index.html)
-[exercises-js.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-05/index.html)
 
 Media queries were applied for the following views:
 <ul>
@@ -65,6 +64,71 @@ They were divided into the following folders:
 </ul>
 
 They must be connected by a script tag in the html for their correct operation.
+
+## 🔗 Link
+[exercises-js.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-05/index.html)
+
+
+## Week 06
+
+For this week, the objective was to continue developing new html files (login and sign up) with their respective css files, and js files to give it new features.
+
+The same views implemented in html had to be responsive.
+
+For js files, the following requirements had to be taken into account:
+<ul>
+    <li>
+        For the login.html, the required fields of Email and password should be incorporated.
+    </li>
+    <ul>
+        <li>
+            The email must have a valid format. (For more information review the file of required documents)
+        </li>
+        <li>
+            The password should be made up of letters and numbers. (For more information review the file of required documents)
+        </li>
+    </ul>
+    <li>
+        For the registration of members (sign up) the following should be taken into account:
+    </li>
+    <ul>
+        <li>
+            The name must have more than 3 letters.
+        </li>
+        <li>
+            The Lastname must have more than 3 letters.
+        </li>
+        <li>
+            The DNI must contain more than 7 numbers.
+        </li>
+        <li>
+            The phone number must contain only 10 numbers.
+        </li>
+        <li>
+            The date of birth must contain the format dd/mm/aaaa.
+        </li>
+        <li>
+            The location must contain alphanumeric text, and more than 3 numbers.
+        </li>
+        <li>
+            The postal code must contain only numbers, and between 4 and 5 numbers.
+        </li>
+        <li>
+            The address must contain 5 characters and more than 3 letters.
+        </li>
+        <li>
+            The email must have a valid format.
+        </li>
+        <li>
+            The password should be made up of letters and numbers. At least 8 characters.
+        </li>
+    </ul>
+</ul>
+
+The same js files had to be connected correctly in the html for it to work correctly.
+
+## 🔗 Link
+[landignJS.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-06/index.html)
 
 
 ## Author

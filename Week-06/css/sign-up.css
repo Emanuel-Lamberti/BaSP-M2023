@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../../Assets/gym.jpg");
+    background-size: cover;
+}
+
+header {
+    background-color: #535353;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    height: 180px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.logo h1 {
+    text-decoration: none;
+    color: #E3EC39;
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+
+.btn-login {
+    background-color: #FFFFFF;
+    display: flex;
+    margin-right: 3rem;
+    border-radius: 10px;
+    width: 120px;
+    height: 76px;
+}
+
+.btn-login-box a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-around;
+}
+
+.main-sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: #D9D9D9;
+    opacity: 90%;
+    width: 1012px;
+    height: 405px;
+    margin-top: 10rem;
+}
+
+.form-sign-up {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 260px;
+    border-radius: 12px;
+    height: 37px;
+}
+
+.btn-accept {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-accept button {
+    background-color: #E3EC39;
+    width: 133px;
+    height: 47px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
