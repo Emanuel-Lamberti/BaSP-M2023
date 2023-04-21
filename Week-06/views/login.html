@@ -14,15 +14,13 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html">
+            <a href="/Week-06/views/index.html">
                 <img src="../../Assets/radium-rocket-logo.png" alt="Logo Radium Rocket">
-            </a>
-            <div>
                 <h1>MEGA ROCKET S.A.</h1>
-            </div>
+            </a>
         </div>
         <div class="btn-sing-up">
-            <a href="sign-up.html" class="btn-sign-up" target="_blank">
+            <a href="/Week-06/views/sign-up.html" class="btn-sign-up" target="_blank">
                 SIGN UP
                 <img src="../../Assets/signup-icon.png" alt="Sing up icon">
             </a>
@@ -33,27 +31,52 @@
             <h2>
                 Login
             </h2>
-            <div class="form-login">
+            <form class="form-login">
                 <div class="label-input">
                     <label for="name">Email</label>
                     <input type="text" placeholder="example@gmail.com" id="Email">
                 </div>
                 <div class="label-input">
                     <label for="name">Password</label>
-                    <input type="text" placeholder="********" id="Email">
+                    <input type="text" placeholder="********" id="Password">
                 </div>
                 <div class="forget">
                     <button>
                         Forget your password?
                     </button>
                 </div>
-                <div class="btn-enter">
-                    <button>
+                <div class="btn-enter" id="enter">
+                    <button onclick="validationEmail(document.getElementById('Email').value)">
                         Enter
                     </button>
                 </div>
-            </div>
+            </form>
         </div>
     </main>
+    <footer>
+        <div class="link-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../../Assets/instagram-logo.png" alt="Instagram logo">
+                @ROCKETGYM
+            </a>
+            <a href="https://wa.me/#####?text=¡I´m+interested!" target="_blank">
+                <img src="../../Assets/whatsapp-logo.png" alt="Whatsapp logo">
+                +1 408 741 2369
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../../Assets/facebook-logo.png" alt="Instagram logo">
+                Mega rocket GYM
+            </a>
+        </div>
+        <div class="p-footer">
+            <h2>
+                MEGA ROCKET SA
+            </h2> 
+            <p>
+                All rights reserved. 2023©
+            </p>
+        </div>
+    </footer>
+<script src="../js/login.js"></script> 
 </body>
 </html>

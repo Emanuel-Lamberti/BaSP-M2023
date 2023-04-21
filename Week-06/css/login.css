@@ -21,17 +21,18 @@ header {
 }
 
 .logo img {
-    width: 180px;
-    height: 180px;
+    width: 80px;
+    height: 80px;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 8rem;
 }
 
 .logo h1 {
     text-decoration: none;
     color: #E3EC39;
-    font-size: 4rem;
+    font-size: 2rem;
     margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .btn-sing-up {
@@ -109,3 +110,55 @@ input {
     border-radius: 10px;
 }
 
+.green-border {
+    border: 6px solid #009419;
+}
+
+.red-border {
+    border : 6px solid #e40202;
+}
+
+footer {
+    background-color: #323232;
+    height: 148px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.link-social {
+    display: flex;
+    flex-direction: row;
+}
+
+footer img {
+    width: 75px;
+    height: 75px;
+    margin-right: 1rem;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+footer .p-footer {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+footer .p-footer h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: none;
+}
