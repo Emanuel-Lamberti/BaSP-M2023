@@ -110,6 +110,12 @@ input {
     border-radius: 10px;
 }
 
+#textValidationEmail, #textValidationPassword {
+    display: none;
+    color: #e40202;
+    margin-top: 4px;
+}
+
 .green-border {
     border: 6px solid #009419;
 }

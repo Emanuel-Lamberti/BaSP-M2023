@@ -35,10 +35,12 @@
                 <div class="label-input">
                     <label for="name">Email</label>
                     <input type="text" placeholder="example@gmail.com" id="Email">
+                    <p id="textValidationEmail">Invalid email</p>
                 </div>
                 <div class="label-input">
                     <label for="name">Password</label>
                     <input type="text" placeholder="********" id="Password">
+                    <p id="textValidationPassword">Invalid password</p>
                 </div>
                 <div class="forget">
                     <button>
@@ -46,7 +48,7 @@
                     </button>
                 </div>
                 <div class="btn-enter" id="enter">
-                    <button onclick="validationEmail(document.getElementById('Email').value)">
+                    <button type="button"><!-- onclick="validationEmail(document.getElementById('Email').value)" -->
                         Enter
                     </button>
                 </div>
