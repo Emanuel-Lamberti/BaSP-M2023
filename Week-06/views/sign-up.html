@@ -32,42 +32,56 @@
                 <div class="label-input">
                     <label for="name">Name</label>
                     <input type="text" placeholder="Name" id="Name">
+                    <p id="textValidationName">Invalid name</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Lastname</label>
+                    <label for="lastname">Lastname</label>
                     <input type="text" placeholder="Lastname" id="Lastname">
+                    <p id="textValidationLastname">Invalid lastname</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Date of birth</label>
+                    <label for="date">Date of birth</label>
                     <input type="text" placeholder="Date of birth" id="DateOfBirth">
+                    <p id="textValidationDate">Date invalid</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Phone</label>
-                    <input type="number" placeholder="Phone" id="Phone">
+                    <label for="phone">Phone</label>
+                    <input type="text" placeholder="Phone" id="Phone">
+                    <p id="textValidationPhone">Invalid number phone</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Location</label>
+                    <label for="location">Location</label>
                     <input type="text" placeholder="Location" id="Location">
+                    <p id="textValidationLocation">Invalid location</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Postal Code</label>
+                    <label for="Adress">Adress</label>
+                    <input type="text" placeholder="Location" id="Adress">
+                    <p id="textValidationAdress">Invalid adress</p>
+                </div>
+                <div class="label-input">
+                    <label for="postal">Postal Code</label>
                     <input type="text" placeholder="Postal Code" id="PostalCode">
+                    <p id="textValidationPostalCode">Invalid Postal Code</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Email</label>
+                    <label for="email">Email</label>
                     <input type="text" placeholder="Email" id="Email">
+                    <p id="textValidationEmail">Invalid email</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Password</label>
+                    <label for="password">Password</label>
                     <input type="text" placeholder="Password" id="Password">
+                    <p id="textValidationPassword">Invalid password</p>
                 </div>
                 <div class="label-input">
-                    <label for="name">Repeat password</label>
+                    <label for="repeat">Repeat password</label>
                     <input type="text" placeholder="Repeat password" id="RepeatPassword">
+                    <p id="textValidationRepeatPassword">Passwords must be the same</p>
                 </div>
             </form>
-            <div class="btn-accept">
-                <button>
+            <div class="btn-accept" id="accept">
+                <button type="button">
                     ACCEPT
                 </button>
             </div>
@@ -97,5 +111,6 @@
             </p>
         </div>
     </footer>
+<script src="../js/sign-up.js"></script>
 </body>
 </html>

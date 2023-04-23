@@ -64,7 +64,7 @@ header {
     background-color: #D9D9D9;
     opacity: 90%;
     width: 1012px;
-    height: 405px;
+    height: 520px;
     margin-top: 10rem;
 }
 
@@ -74,6 +74,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: row;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -110,6 +111,20 @@ input {
 
 .red-border {
     border : 6px solid #e40202;
+}
+
+#textValidationEmail, 
+#textValidationPassword, 
+#textValidationName, 
+#textValidationLastname,
+#textValidationDate,
+#textValidationPhone,
+#textValidationLocation,
+#textValidationPostalCode,
+#textValidationRepeatPassword {
+    display: none;
+    color: #e40202;
+    margin-top: 1px;
 }
 
 footer {

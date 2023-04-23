@@ -8,8 +8,8 @@ emailInput.onfocus = function() {
 }
 
 emailInput.onblur = function() {
-    let emailValido = validationEmail();
-    if(emailValido == true){
+    var emailValido = validationEmail();
+    if(emailValido == true) {
         emailInput.classList.remove("green-border");
         textValidationEmail.style.display = "none";
     }else{
@@ -43,11 +43,11 @@ passwordInput.onfocus = function() {
 
 passwordInput.onblur = function() {
     
-    let passValido = validationPassword();
-    if(passValido == true){
+    var passValido = validationPassword();
+    if(passValido == true) {
         passwordInput.classList.remove("green-border");
         textValidationPassword.style.display = "none";
-    }else{
+    } else {
         passwordInput.classList.add("red-border");
         textValidationPassword.style.display = "block";
     }
@@ -67,7 +67,7 @@ var acceptBtn = document.getElementById("enter");
 acceptBtn.onclick = function(event) {
     var emailValido = validationEmail();
     var passwordValido = validationPassword();
-    if(emailValido && passwordValido){ 
+    if(emailValido && passwordValido) { 
         alert("Email: " + emailInput.value + "\nPassword: " + passwordInput.value);
     } else {
         if(emailValido == false){
