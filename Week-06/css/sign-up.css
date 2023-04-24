@@ -64,8 +64,8 @@ header {
     background-color: #D9D9D9;
     opacity: 90%;
     width: 1012px;
-    height: 520px;
-    margin-top: 10rem;
+    height: auto;
+    margin-top: 2rem;
 }
 
 .form-sign-up {
@@ -75,7 +75,7 @@ header {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap: 7rem;
 }
 
 .label-input {
@@ -103,6 +103,7 @@ input {
     border: none;
     font-size: 0.8rem;
     font-weight: bold;
+    margin-bottom: 4rem;
 }
 
 .green-border {
@@ -121,7 +122,9 @@ input {
 #textValidationPhone,
 #textValidationLocation,
 #textValidationPostalCode,
-#textValidationRepeatPassword {
+#textValidationRepeatPassword,
+#textValidationDni,
+#textValidationAdress {
     display: none;
     color: #e40202;
     margin-top: 1px;
@@ -134,7 +137,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 12rem;
+    margin-top: 2rem;
 }
 
 .link-social {

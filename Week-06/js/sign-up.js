@@ -18,6 +18,8 @@ var passwordInput = document.getElementById("Password");
 var textValidationPassword = document.getElementById("textValidationPassword");
 var repeatPasswordInput = document.getElementById("RepeatPassword");
 var textValidationRepeatPassword = document.getElementById("textValidationRepeatPassword");
+var dniInput = document.getElementById("Dni");
+var textValidationDni = document.getElementById("textValidationDni");
 
 nameInput.onfocus = function() {
     nameInput.classList.add("green-border");
@@ -76,6 +78,36 @@ function validationLastName() {
     }
 }
 
+dniInput.onfocus = function() {
+    dniInput.classList.add("green-border");
+    dniInput.classList.remove("red-border");
+}
+
+dniInput.onblur = function() {
+    var dniCorrect = validationDni();
+    if(dniCorrect == true) {
+        dniInput.classList.remove("green-border");
+        textValidationDni.style.display = "none";
+    } else {
+        dniInput.classList.add("red-border");
+        textValidationDni.style.display = "block";
+    }
+}
+
+var dniValue;
+var arrayDni = [];
+var numbers = ["0","1","2","3","4","5","6","7", "8", "9"];
+function validationDni() {
+    dniValue = dniInput.value;
+    arrayDni = dniValue.split("");
+    if(dniValue.length >= 7 &&
+        arrayDni.filter(function(characters){return numbers.indexOf(characters) != -1}).length > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 dateBirthInput.onfocus = function() {
     dateBirthInput.classList.add("green-border");
     dateBirthInput.classList.remove("red-border");
@@ -94,43 +126,20 @@ dateBirthInput.onblur = function() {
 
 var dateInput;
 function validationDate() {
-    dateInput = document.getElementById("DateOfBirth").value;
-    try{
-        var date = dateInput.split("/");
-        var day = date[0];
-        var month = date[1];
-        var year = date[2];
-        var state = true;
-        if ((day.length == 2) && (month.length == 2) && (year.length == 4)) {
-            switch (parseInt(month)) {
-                case 1:dmax = 31;break;
-                case 2: if (year % 4 == 0) dmax = 29; else dmax = 28;
-                break;
-                case 3:dmax = 31;break;
-                case 4:dmax = 30;break;
-                case 5:dmax = 31;break;
-                case 6:dmax = 30;break;
-                case 7:dmax = 31;break;
-                case 8:dmax = 31;break;
-                case 9:dmax = 30;break;
-                case 10:dmax = 31;break;
-                case 11:dmax = 30;break;
-                case 12:dmax = 31;break;
+    dateInput = dateBirthInput.value;
+    var date = dateInput.split("-");
+    var day = date[2];
+    var month = date[1];
+    var year = date[0];
+    if (day > 0 && day < 32 &&
+        month > 0 && month < 13 &&
+        year > 1900 && year < 2025) {
+            if (year % 400 === 0 && day < 29) {
+                return true;
             }
-            dmax!=""?dmax:dmax=-1;if ((day >= 1) && (day <= dmax) && (month >= 1) && (month <= 12)) {
-            for (var i = 0; i < date[0].length; i++) {
-                dayC = date[0].charAt(i).charCodeAt(0);
-                (!((dayC > 47) && (dayC < 58)))?state = false:'';
-                monthC = date[1].charAt(i).charCodeAt(0);
-                (!((monthC > 47) && (monthC < 58)))?state = false:'';
-            }
-        } for (var i = 0; i < date[2].length; i++) {
-            yearC = date[2].charAt(i).charCodeAt(0);
-        (!((yearC > 47) && (yearC < 58)))?state = false:'';
-        }} else state = false;
-        return state;
-   }catch(err){
-    //alert("Error in date");
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -151,12 +160,12 @@ phoneInput.onblur = function() {
 }
 
 var numberPhone;
-var arrayPhone;
-var numbers = ["0","1","2","3","4","5","6","7", "8", "9"];
+var arrayPhone = [];
 function validationPhone() {
     numberPhone = document.getElementById("Phone").value;
     arrayPhone = numberPhone.split("");
-    if (numberPhone.length == 10 && arrayPhone.filter(function(characters){return numbers.indexOf(characters) != -1}).length > 0) {
+    if (numberPhone.length === 10 &&
+        arrayPhone.filter(function(characters){return numbers.indexOf(characters) != -1}).length > 0) {
         return true;
     } else {
         return false;
@@ -165,7 +174,7 @@ function validationPhone() {
 
 locationInput.onfocus = function() {
     locationInput.classList.add("green-border");
-    namelocationInputInput.classList.remove("red-border");
+    locationInput.classList.remove("red-border");
 }
 
 locationInput.onblur = function() {
@@ -180,9 +189,13 @@ locationInput.onblur = function() {
 }
 
 var locationValue;
+var arrayLocation = [];
 function validationLocation() {
     locationValue = document.getElementById("Location").value;
-    if(locationValue.length >= 3) {
+    arrayLocation = locationValue.split("");
+    if(locationValue.length >= 3 ||
+        arrayLocation.filter(function(characters){return numbers.indexOf(characters) != -1}).length > 0 &&
+        arrayLocation.filter(function(characters){return letters.indexOf(characters) != -1}).length > 0) {
         return true;
     } else {
         return false;
@@ -206,9 +219,15 @@ adressInput.onblur = function() {
 }
 
 var adressValue;
+var arrayAdress = [];
 function validationAdress() {
     adressValue = document.getElementById("Adress").value;
-    if(adressValue.length >= 5) {
+    arrayAdress = adressValue.split(" ");
+    arrayAdressNumber = parseInt(arrayAdress[1]);
+    if(adressValue.length >= 5 &&
+        typeof arrayAdress[0] === "string" &&
+        typeof arrayAdressNumber === "number" &&
+        adressValue.includes(" ")) {
         return true;
     } else {
         return false;
@@ -232,9 +251,13 @@ postalInput.onblur = function() {
 }
 
 var postalValue;
+var arrayPostalCode = [];
 function validationPostalCode() {
     postalValue = document.getElementById("PostalCode").value;
-    if(postalValue.length >= 4 && postalValue.length <= 5) {
+    arrayPostalCode = postalValue.split("");
+    if(postalValue.length >= 4 &&
+        postalValue.length <= 5 &&
+        arrayPostalCode.filter(function(characters){return numbers.indexOf(characters) != -1}).length > 0) {
         return true;
     } else {
         return false;
@@ -247,8 +270,8 @@ emailInput.onfocus = function() {
 }
 
 emailInput.onblur = function() {
-    var emailValido = validationEmail();
-    if(emailValido == true) {
+    var emailCorrect = validationEmail();
+    if(emailCorrect == true) {
         emailInput.classList.remove("green-border");
         textValidationEmail.style.display = "none";
     }else{
@@ -264,8 +287,8 @@ function validationEmail() {
     email = document.getElementById("Email").value;
     listEmail = email.split(".");
     if (
-    validEmail.test(email) && 
-    listEmail.pop().length >= 3 &&    
+    validEmail.test(email) &&
+    listEmail.pop().length >= 3 &&  
     email != null &&
     email.length > 0) {
         return true;
@@ -280,9 +303,8 @@ passwordInput.onfocus = function() {
 }
 
 passwordInput.onblur = function() {
-    
-    var passValido = validationPassword();
-    if(passValido == true) {
+    var passCorrect = validationPassword();
+    if(passCorrect == true) {
         passwordInput.classList.remove("green-border");
         textValidationPassword.style.display = "none";
     } else {
@@ -294,7 +316,9 @@ passwordInput.onblur = function() {
 var password;
 function validationPassword() {
     password = document.getElementById("Password").value
-    if (password.length >= 8 && password != null && isNaN(password) == true) {
+    if (password.length >= 8 &&
+        password != null &&
+        isNaN(password) == true) {
         return true;
     } else {
         return false;
@@ -307,8 +331,8 @@ repeatPasswordInput.onfocus = function() {
 }
 
 repeatPasswordInput.onblur = function() {
-    var repeatPassValido = validationRepeatPassword();
-    if(repeatPassValido == true) {
+    var repeatPassCorrect = validationRepeatPassword();
+    if(repeatPassCorrect == true) {
         repeatPasswordInput.classList.remove("green-border");
         textValidationRepeatPassword.style.display = "none";
     } else {
@@ -320,10 +344,10 @@ repeatPasswordInput.onblur = function() {
 var repeatPasswordValue;
 function validationRepeatPassword() {
     repeatPasswordValue = document.getElementById("RepeatPassword").value;
-    if(passwordInput.value == repeatPasswordValue && 
-        repeatPasswordValue.length >= 8 && 
-        password != null 
-        && isNaN(password) == true) {
+    if(passwordInput.value == repeatPasswordValue &&
+        repeatPasswordValue.length >= 8 &&
+        password != null &&
+        isNaN(password) == true) {
         return true;
     } else {
         return false;
