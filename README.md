@@ -128,7 +128,7 @@ For js files, the following requirements had to be taken into account:
 The same js files had to be connected correctly in the html for it to work correctly.
 
 ## 🔗 Link
-[landignJS.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-06/index.html)
+[landignJS.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-06/views/index.html)
 
 
 ## Author

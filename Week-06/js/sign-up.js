@@ -366,8 +366,10 @@ btnAccept.onclick = function(event) {
     var emailValidate = validationEmail();
     var passwordValidate = validationPassword();
     var repeatPasswordValidate = validationRepeatPassword();
+    var dniValidate = validationDni();
     if(nameValidate && 
-        lastNameValidate && 
+        lastNameValidate &&
+        dniValidate && 
         dateValidate && 
         phoneValidate && 
         locationValidate &&
@@ -378,6 +380,7 @@ btnAccept.onclick = function(event) {
         repeatPasswordValidate){ 
         alert("Name: " + emailInput.value + 
             "\nLastname: " + lastNameInput.value +
+            "\nDNI: " + dniInput.value +
             "\nDate of birth: " + dateBirthInput.value +
             "\nPhone: " + phoneInput.value +
             "\nLocation: " + locationInput.value +
@@ -393,6 +396,9 @@ btnAccept.onclick = function(event) {
         if(lastNameValidate == false) {
             alert("Invalid lastname: " + lastNameInput.value);
         }
+        if(dniInput == false) {
+            alert("Invalid DNI: " + dniInput.value);
+        }
         if(dateBirthInput == false) {
             alert("Invalid date of birth: " + dateBirthInput.value);
         }
@@ -400,7 +406,7 @@ btnAccept.onclick = function(event) {
             alert("Invalid phone: " + phoneInput.value);
         }
         if(locationInput == false) {
-            alert("Invalid phone: " + locationInput.value);
+            alert("Invalid location: " + locationInput.value);
         }
         if(adressInput == false) {
             alert("Invalid adress: " + adressInput.value);
@@ -421,6 +427,7 @@ btnAccept.onclick = function(event) {
     event.preventDefault();
     console.log(nameInput.value);
     console.log(lastNameInput.value);
+    console.log(dniInput.value);
     console.log(dateBirthInput.value);
     console.log(phoneInput.value);
     console.log(locationInput.value);
