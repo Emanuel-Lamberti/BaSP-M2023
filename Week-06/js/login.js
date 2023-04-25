@@ -77,7 +77,7 @@ acceptBtn.onclick = function(event) {
             alert("Invalid email: " + emailInput.value);
         }
         if(passwordValido == false) {
-            alert("Invalid password: " + passwordInput.value);
+            alert("Invalid password: " + passwordMistery);
         }
     }
     event.preventDefault();

@@ -367,6 +367,14 @@ btnAccept.onclick = function(event) {
     var passwordValidate = validationPassword();
     var repeatPasswordValidate = validationRepeatPassword();
     var dniValidate = validationDni();
+    var passwordMistery = "";
+    var repeatMistery = "";
+    for(var i = 0; i < passwordInput.value.length; i++) {
+        passwordMistery = passwordMistery + "*";
+    }
+    for(var i = 0; i < repeatPasswordInput.value.length; i++) {
+        repeatMistery = repeatMistery + "*";
+    }
     if(nameValidate && 
         lastNameValidate &&
         dniValidate && 
@@ -387,7 +395,7 @@ btnAccept.onclick = function(event) {
             "\nAdress: " + adressInput.value +
             "\nPostal Code: " + postalInput.value +
             "\nEmail: " + emailInput.value +
-            "\nPassword: " + passwordInput.value +
+            "\nPassword: " + passwordMistery +
             "\nRepeat Password: " + repeatPasswordInput.value);
     } else {
         if(nameValidate == false){
@@ -418,10 +426,10 @@ btnAccept.onclick = function(event) {
             alert("Invalid Email: " + emailInput.value);
         }
         if(passwordInput == false) {
-            alert("Invalid Password: " + passwordInput.value);
+            alert("Invalid Password: " + passwordMistery);
         }
         if(repeatPasswordInput == false) {
-            alert("Invalid Repeat Password: " + repeatPasswordInput.value);
+            alert("Invalid Repeat Password: " + repeatMistery);
         }
     }
     event.preventDefault();
