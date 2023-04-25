@@ -18,9 +18,9 @@ console.log(orderMonths);
 // c. Agregar un elemento al principio y al final del array (utilizar unshift y push).
 
 console.log("-Exercise 3.c:");
-var arrayFinal = array.push("Ricardo");
-console.log("El array con el elemento agregado al inicio es: " + array);
 var arrayInit = array.unshift("Samuel");
+console.log("El array con el elemento agregado al inicio es: " + array);
+var arrayFinal = array.push("Ricardo");
 console.log("El array con el elemento agregado al final es: " + array);
 
 // d. Quitar un elemento del principio y del final del array (utilizar shift y pop).
@@ -34,6 +34,7 @@ console.log("El array con el elemento eliminado al final es: " + array);
 // e. Invertir el orden del array (utilizar reverse).
 
 console.log("-Exercise 3.e:");
+var array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 var reverseOrder = array.reverse();
 console.log("El array con el orden invertido es: " + array);
 

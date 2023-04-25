@@ -21,8 +21,5 @@ console.log(strComplete);
 console.log("-Exercise 1.c:");
 var string1 = "hello";
 var string2 = "world";
-var lenghtString1 = string1.length;
-var lenghtString2 = string2.length;
-var stringAddition = lenghtString1 + lenghtString2;
-console.log(stringAddition);
+console.log(string1.length + string2.length);
 
