@@ -168,3 +168,129 @@ footer .p-footer h2 {
     font-weight: bold;
     text-shadow: none;
 }
+
+@media screen and (min-width: 390px) and (max-width: 600px) {
+    .logo img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin-left: 1rem;
+        margin-bottom: 6px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    .box {
+        width: 20rem;
+        height: 28rem;
+        border-radius: 25px;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        background-color: #323232;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6rem;
+    }
+    
+    .link-social {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer img {
+        width: 60px;
+        height: 60px;
+        margin-right: 1rem;
+    }
+    
+    footer a {
+        color: #FFFFFF;
+        text-decoration: none;
+        display: grid;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 1rem;
+    }
+    
+    footer .p-footer {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        margin-left: -0.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer .p-footer h2 {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .box {
+        width: 40rem;
+        height: 28rem;
+        border-radius: 25px;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    footer {
+        background-color: #323232;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6rem;
+    }
+    
+    .link-social {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer img {
+        width: 80px;
+        height: 80px;
+        margin-right: 1rem;
+    }
+    
+    footer a {
+        color: #FFFFFF;
+        text-decoration: none;
+        display: grid;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 1rem;
+    }
+    
+    footer .p-footer {
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        margin-left: -0.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    footer .p-footer h2 {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: none;
+    }
+}

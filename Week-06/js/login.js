@@ -42,7 +42,6 @@ passwordInput.onfocus = function() {
 }
 
 passwordInput.onblur = function() {
-    
     var passValido = validationPassword();
     if(passValido == true) {
         passwordInput.classList.remove("green-border");
@@ -67,8 +66,12 @@ var acceptBtn = document.getElementById("enter");
 acceptBtn.onclick = function(event) {
     var emailValido = validationEmail();
     var passwordValido = validationPassword();
+    var passwordMistery = "";
+    for(var i = 0; i < passwordInput.value.length; i++) {
+        passwordMistery = passwordMistery + "*";
+    }
     if(emailValido && passwordValido) { 
-        alert("Email: " + emailInput.value + "\nPassword: " + passwordInput.value);
+        alert("Email: " + emailInput.value + "\nPassword: " + passwordMistery);
     } else {
         if(emailValido == false){
             alert("Invalid email: " + emailInput.value);
