@@ -143,22 +143,6 @@ In the request, the form data must be sent as query-params, that is, for each
 field a value is sent following the format:
 <li>../login?name=juan&lastName=lopez&...</li>
 
-After making the HTTP request with the form data, depending on the result of the
-same, different alerts should be displayed.
-
-The URL for each form request is:
-<ul>
-    <li>Login: https://api-rest-server.vercel.app/login</li>
-    <li>Signup: https://api-rest-server.vercel.app/signup</li>
-</ul>
-
-
-The only user who can perform a successful login is:
-<ul>
-    <li>email: rose@radiumrocket.com</li>
-    <li>password: BaSProfessional</li>
-</ul>
-
 ## 🔗 Link
 [landignJSW7.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-07/views/index.html)
 
