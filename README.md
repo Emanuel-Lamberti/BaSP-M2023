@@ -130,6 +130,38 @@ The same js files had to be connected correctly in the html for it to work corre
 ## 🔗 Link
 [landignJS.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-06/views/index.html)
 
+## Week 07
+
+For this week, the possibility of adding more functionality to the website was raised.
+
+For the Signup form and for the Login form, the following must be done:
+In each form an HTTP request must be made using the Javascript Fetch method,
+sending all the data loaded in the form. The request should only be executed if they pass
+all form validations; if any field does not meet the validations, it should not be
+make the request.
+In the request, the form data must be sent as query-params, that is, for each
+field a value is sent following the format:
+<li>../login?name=juan&lastName=lopez&...</li>
+
+After making the HTTP request with the form data, depending on the result of the
+same, different alerts should be displayed.
+
+The URL for each form request is:
+<ul>
+    <li>Login: https://api-rest-server.vercel.app/login</li>
+    <li>Signup: https://api-rest-server.vercel.app/signup</li>
+</ul>
+
+
+The only user who can perform a successful login is:
+<ul>
+    <li>email: rose@radiumrocket.com</li>
+    <li>password: BaSProfessional</li>
+</ul>
+
+## 🔗 Link
+[landignJSW7.html](https://emanuel-lamberti.github.io/BaSP-M2023/Week-07/views/index.html)
+
 
 ## Author
 - Emanuel Adrián Lamberti

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Week-06/css/reset.css">
+    <link rel="stylesheet" href="../../Week-06/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Mega Rocket S.A. Gym | Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../../Assets/radium-rocket-logo.png" alt="Logo Radium Rocket">
+                <h1>MEGA ROCKET S.A.</h1>
+            </a>
+        </div>
+        <div class="btn-sing-up">
+            <a href="sign-up.html" class="btn-sign-up" target="_blank">
+                SIGN UP
+                <img src="../../Assets/signup-icon.png" alt="Sing up icon">
+            </a>
+        </div>
+    </header>
+    <main class="main-login">
+        <div class="box">
+            <h2>
+                Login
+            </h2>
+            <form class="form-login">
+                <div class="label-input">
+                    <label for="name">Email</label>
+                    <input type="text" placeholder="example@gmail.com" id="Email">
+                    <p id="textValidationEmail">Invalid email</p>
+                </div>
+                <div class="label-input">
+                    <label for="name">Password</label>
+                    <input type="password" placeholder="********" id="Password">
+                    <p id="textValidationPassword">Invalid password</p>
+                </div>
+                <div class="forget">
+                    <button>
+                        Forget your password?
+                    </button>
+                </div>
+                <div class="btn-enter" id="enter">
+                    <button type="button"><!-- onclick="validationEmail(document.getElementById('Email').value)" -->
+                        Enter
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="link-social">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../../Assets/instagram-logo.png" alt="Instagram logo">
+                @ROCKETGYM
+            </a>
+            <a href="https://wa.me/#####?text=¡I´m+interested!" target="_blank">
+                <img src="../../Assets/whatsapp-logo.png" alt="Whatsapp logo">
+                +1 408 741 2369
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../../Assets/facebook-logo.png" alt="Instagram logo">
+                Mega rocket GYM
+            </a>
+        </div>
+        <div class="p-footer">
+            <h2>
+                MEGA ROCKET SA
+            </h2> 
+            <p>
+                All rights reserved. 2023©
+            </p>
+        </div>
+    </footer>
+<script src="../js/login.js"></script> 
+</body>
+</html>
