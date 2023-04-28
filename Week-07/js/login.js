@@ -67,10 +67,28 @@ acceptBtn.onclick = function(event) {
     var emailValido = validationEmail();
     var passwordValido = validationPassword();
     var passwordMistery = "";
+    var pageUrlLogin = "https://api-rest-server.vercel.app/login";
     for(var i = 0; i < passwordInput.value.length; i++) {
         passwordMistery = passwordMistery + "*";
     }
-    if(emailValido && passwordValido) { 
+    if(emailValido && passwordValido) {
+        fetch(pageUrlLogin + "?email="+emailInput.value+"&password="+passwordInput.value)
+        .then(function(response){
+            if(!response.ok) {
+                //throw new Error(response.status);
+            }
+            return response.json();
+        })
+        .then(function(data){
+            if(!data.success) {
+                throw new Error(data.msg);
+            } else {
+                alert(data.msg);
+            }
+        })
+        .catch(function(error){
+            alert(error);
+        })
         alert("Email: " + emailInput.value + "\nPassword: " + passwordMistery);
     } else {
         if(emailValido == false){
@@ -81,6 +99,4 @@ acceptBtn.onclick = function(event) {
         }
     }
     event.preventDefault();
-    console.log(emailInput.value);
-    console.log(passwordInput.value);
 }
