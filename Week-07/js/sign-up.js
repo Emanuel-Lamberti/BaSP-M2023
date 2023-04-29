@@ -369,12 +369,15 @@ btnAccept.onclick = function(event) {
     var dniValidate = validationDni();
     var passwordMistery = "";
     var repeatMistery = "";
+    var pageUrlSignUp = "https://api-rest-server.vercel.app/signup";
     for(var i = 0; i < passwordInput.value.length; i++) {
         passwordMistery = passwordMistery + "*";
     }
     for(var i = 0; i < repeatPasswordInput.value.length; i++) {
         repeatMistery = repeatMistery + "*";
     }
+    var dateEl = dateInput.split('-');
+    var formattedDate = dateEl[1] + '/' + dateEl[2] + '/' + dateEl[0];
     if(nameValidate && 
         lastNameValidate &&
         dniValidate && 
@@ -385,8 +388,30 @@ btnAccept.onclick = function(event) {
         postalValidate &&
         emailValidate &&
         passwordValidate &&
-        repeatPasswordValidate){ 
-        alert("Name: " + emailInput.value + 
+        repeatPasswordValidate){
+            fetch(pageUrlSignUp + 
+                "?name="+nameInput.value+
+                "&lastName="+lastNameInput.value+
+                "&dni="+dniInput.value+
+                "&dob="+formattedDate+
+                "&phone="+phoneInput.value+
+                "&city="+locationInput.value+
+                "&address="+adressInput.value+
+                "&zip="+postalInput.value+
+                "&email="+emailInput.value+
+                "&password="+passwordInput.value)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+                console.log(data);
+            })
+            .catch(function(error){
+                alert(error);
+            })
+        saveLocalStorage();
+        obtainLocalStorage();
+        alert("Name: " + nameInput.value + 
             "\nLastname: " + lastNameInput.value +
             "\nDNI: " + dniInput.value +
             "\nDate of birth: " + dateBirthInput.value +
@@ -432,16 +457,63 @@ btnAccept.onclick = function(event) {
             alert("Invalid Repeat Password: " + repeatMistery);
         }
     }
+    refreshFunction();
     event.preventDefault();
-    console.log(nameInput.value);
-    console.log(lastNameInput.value);
-    console.log(dniInput.value);
-    console.log(dateBirthInput.value);
-    console.log(phoneInput.value);
-    console.log(locationInput.value);
-    console.log(adressInput.value);
-    console.log(postalInput.value);
-    console.log(emailInput.value);
-    console.log(passwordInput.value);
-    console.log(repeatPasswordInput.value);
+}
+
+function saveLocalStorage() {
+    localStorage.setItem("name", nameInput.value);
+    localStorage.setItem("lastName", lastNameInput.value);
+    localStorage.setItem("dni", dniInput.value);
+    localStorage.setItem("dob", formattedDate);
+    localStorage.setItem("phone", phoneInput.value);
+    localStorage.setItem("city", locationInput.value);
+    localStorage.setItem("address", adressInput.value);
+    localStorage.setItem("zip", postalInput.value);
+    localStorage.setItem("email", emailInput.value);
+    localStorage.setItem("password", passwordInput.value);
+}
+
+function obtainLocalStorage() {
+    if(localStorage.getItem("name")) {
+        var nameLS = localStorage.getItem("name");
+        var lastNameLS = localStorage.getItem("lastName");
+        var dniLS = localStorage.getItem("dni");
+        var dateLS = localStorage.getItem("dob");
+        var phoneLS = localStorage.getItem("phone");
+        var locationLS = localStorage.getItem("city");
+        var adressLS = localStorage.getItem("address");
+        var postalLS = localStorage.getItem("zip");
+        var emailLS = localStorage.getItem("email");
+        var passLS = localStorage.getItem("password");
+        alert("Name: " + nameLS +
+            "\nLastname: " + lastNameLS +
+            "\ndni: " + dniLS +
+            "\ndob: " + dateLS +
+            "\nphone: " + phoneLS +
+            "\ncity: " + locationLS +
+            "\naddress: " + adressLS +
+            "\nzip: " + postalLS +
+            "\nemail: " + emailLS +
+            "\npassword: " + passLS);
+    } else {
+        alert("Error found");
+    }
+}
+
+function sendLocalStorage() {
+    nameInput.value = localStorage.getItem("name");
+    lastNameInput.value = localStorage.getItem("lastName");
+    dniInput.value = localStorage.getItem("dni");
+    dateInput.value = localStorage.getItem("dob");
+    phoneInput.value = localStorage.getItem("phone");
+    locationInput.value = localStorage.getItem("city");
+    adressInput.value = localStorage.getItem("address");
+    postalInput.value = localStorage.getItem("zip");
+    emailInput.value = localStorage.getItem("email");
+    passwordInput.value = localStorage.getItem("password");
+}
+
+function refreshFunction() {
+    sendLocalStorage();
 }
