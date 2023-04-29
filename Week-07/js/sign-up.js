@@ -465,7 +465,7 @@ function saveLocalStorage() {
     localStorage.setItem("name", nameInput.value);
     localStorage.setItem("lastName", lastNameInput.value);
     localStorage.setItem("dni", dniInput.value);
-    localStorage.setItem("dob", formattedDate);
+    localStorage.setItem("dob", dateBirthInput.value);
     localStorage.setItem("phone", phoneInput.value);
     localStorage.setItem("city", locationInput.value);
     localStorage.setItem("address", adressInput.value);
@@ -505,7 +505,7 @@ function sendLocalStorage() {
     nameInput.value = localStorage.getItem("name");
     lastNameInput.value = localStorage.getItem("lastName");
     dniInput.value = localStorage.getItem("dni");
-    dateInput.value = localStorage.getItem("dob");
+    dateBirthInput.value = localStorage.getItem("dob");
     phoneInput.value = localStorage.getItem("phone");
     locationInput.value = localStorage.getItem("city");
     adressInput.value = localStorage.getItem("address");
@@ -515,5 +515,6 @@ function sendLocalStorage() {
 }
 
 function refreshFunction() {
+    console.log("Fecha = " + localStorage.getItem("dob"));
     sendLocalStorage();
 }
