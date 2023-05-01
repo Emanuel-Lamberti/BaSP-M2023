@@ -35,23 +35,33 @@ header {
     margin-bottom: 1rem;
 }
 
-.btn-login {
-    background-color: #FFFFFF;
-    margin-right: 4rem;
+header .container-btn {
+    display: flex;
+    margin-right: 3rem;
+}
+
+header .container-btn .button {
+    background-color: #ffffff;
+    display: flex;
+    margin-left: 3rem;
     border-radius: 10px;
-    width: 120px;
+    width: 158px;
     height: 76px;
 }
 
-.btn-login-box a {
+header .container-btn .button a {
     color: #000000;
     text-decoration: none;
     font-size: 1rem;
     display: flex;
     align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    justify-content: space-around;
+    padding-left: 1rem;
+}
+
+header .container-btn .button img {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
 }
 
 .main-sign-up {

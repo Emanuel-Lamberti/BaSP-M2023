@@ -404,7 +404,11 @@ btnAccept.onclick = function(event) {
                 return response.json();
             })
             .then(function(data){
-                console.log(data);
+                if(!data.success) {
+                    throw new Error(data.msg);
+                } else {
+                    alert(data.msg);
+                }
             })
             .catch(function(error){
                 alert(error);
