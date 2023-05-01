@@ -515,6 +515,5 @@ function sendLocalStorage() {
 }
 
 function refreshFunction() {
-    console.log("Fecha = " + localStorage.getItem("dob"));
     sendLocalStorage();
 }
